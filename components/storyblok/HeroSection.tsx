@@ -52,13 +52,13 @@ export default function HeroSection({ blok }: { blok: HeroSectionBlok }) {
   return (
     <section
       {...editableProps}
-      className="relative isolate h-screen overflow-hidden  border border-white/15 bg-slate-950 px-6 text-white shadow-[0_40px_120px_rgba(15,23,42,0.45)] sm:px-16 lg:px-24"
+      className="relative isolate min-h-[85vh] overflow-hidden  border border-white/15 bg-slate-950 px-6 text-white shadow-[0_40px_120px_rgba(15,23,42,0.45)] sm:px-16 lg:h-screen lg:px-24"
     >
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.45),_rgba(17,24,39,0.9))]" />
       <div className="pointer-events-none absolute -top-1/3 left-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-sky-400/30 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 right-12 -z-10 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
 
-      <div className="mx-auto flex h-full flex-col items-center justify-center gap-8 py-12 text-center lg:flex-row lg:items-center lg:gap-12 lg:text-left">
+      <div className="mx-auto flex flex-col items-center justify-center gap-8 py-12 text-center lg:h-full lg:flex-row lg:items-center lg:gap-12 lg:py-0 lg:text-left">
         <div className="flex-1 space-y-6">
           {blok.eyebrow ? (
             <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-sky-100">

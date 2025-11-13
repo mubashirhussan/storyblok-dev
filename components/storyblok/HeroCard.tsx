@@ -34,7 +34,7 @@ export default function HeroCard({ blok }: { blok: HeroCardBlok }) {
       <div className="pointer-events-none absolute inset-0 translate-y-12 scale-125 bg-gradient-to-b from-white/20 via-transparent to-transparent opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100" />
       <div className="relative z-10 flex min-h-[220px] flex-col gap-4">
         {blok.image?.filename ? (
-          <div className="relative h-32 w-32 overflow-hidden rounded-2xl border border-white/15 bg-slate-900">
+          <div className="relative md:h-32 md:w-32 h-64 w-full  overflow-hidden rounded-2xl border border-white/15 bg-slate-900">
             <Image
               src={blok.image.filename}
               alt={blok.image.alt || blok.title || "Career Role"}
