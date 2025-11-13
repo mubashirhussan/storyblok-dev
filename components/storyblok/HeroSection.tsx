@@ -52,7 +52,7 @@ export default function HeroSection({ blok }: { blok: HeroSectionBlok }) {
   return (
     <section
       {...editableProps}
-      className="relative isolate h-screen overflow-hidden rounded-4xl border border-white/15 bg-slate-950 px-6 text-white shadow-[0_40px_120px_rgba(15,23,42,0.45)] sm:px-16 lg:px-24"
+      className="relative isolate h-screen overflow-hidden  border border-white/15 bg-slate-950 px-6 text-white shadow-[0_40px_120px_rgba(15,23,42,0.45)] sm:px-16 lg:px-24"
     >
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.45),_rgba(17,24,39,0.9))]" />
       <div className="pointer-events-none absolute -top-1/3 left-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-sky-400/30 blur-3xl" />

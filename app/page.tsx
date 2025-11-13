@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-slate-950 text-white ">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(14,165,233,0.25),_rgba(15,23,42,0.95))]" />
-      <div className="pointer-events-none absolute -top-40 left-1/4 -z-20 h-96 w-96 rounded-full bg-sky-500/20 blur-3xl" />
+      <div className="pointer-events-none absolute -top-40 left-1/4 -z-20 h-96 w-96  bg-sky-500/20 blur-3xl" />
       <div className="mx-auto flex w-full  flex-col gap-24">
         {content ? <StoryblokComponent blok={content} /> : null}
       </div>

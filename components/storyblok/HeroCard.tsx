@@ -20,7 +20,9 @@ export type HeroCardBlok = SbBlokData & {
 
 export default function HeroCard({ blok }: { blok: HeroCardBlok }) {
   const editableProps =
-    "_editable" in blok ? storyblokEditable(blok) : { "data-blok-c": blok._uid };
+    "_editable" in blok
+      ? storyblokEditable(blok)
+      : { "data-blok-c": blok._uid };
 
   const badgeLabel = blok.badge ?? blok.tag_text;
 
@@ -70,4 +72,3 @@ export default function HeroCard({ blok }: { blok: HeroCardBlok }) {
     </article>
   );
 }
-
